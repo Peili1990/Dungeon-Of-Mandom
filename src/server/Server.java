@@ -23,7 +23,7 @@ public class Server {
 	}
 	
 	public static void main(String args[]) throws IOException{
-		new Server(34251);
+		new Server(1024);
 	}
 }
 	

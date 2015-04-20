@@ -17,7 +17,7 @@ public class Client {
 	public String who="";
 	private Socket csocket;
 	private String server="127.0.0.1";
-	private int port=34251;
+	private int port=1024;
 	private DataInputStream in;
 	private DataOutputStream out;
 	public static void main(String arg[]){	
@@ -93,6 +93,7 @@ public class Client {
 		sf.sendFD.addKeyListener(new ActListener(c,sf));
 		sf.addWindowListener(new ExitListener(c));
 		sf.gamestart.addMouseListener(new ReadyListener(c,sf));
+		sf.sendmsg.addMouseListener(new MsgSendListener(c,sf));
 		FAsf=new FirstAnnounceGUI();
 		FAsf.accept.addMouseListener(new SelfDefineListener(c,FAsf,Clientcode.ACCEPT_SIGNAL));
 		FAsf.run.addMouseListener(new SelfDefineListener(c,FAsf,Clientcode.RUN_SIGNAL));

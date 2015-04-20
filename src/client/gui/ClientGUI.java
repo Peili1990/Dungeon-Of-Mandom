@@ -15,6 +15,7 @@ public class ClientGUI extends JFrame{
 	public TextField sendFD;
 	public Button gamestart;
 	public JScrollBar bar;
+	public Button sendmsg;
 	public ClientGUI(String winnm){
 		super(winnm);
 		setLayout(new BorderLayout(5,5));
@@ -29,6 +30,7 @@ public class ClientGUI extends JFrame{
 		setLocate(this.getWidth(),this.getHeight());
 		setResizable(false);
 		sendFD=input.sendFD;
+		sendmsg=input.sendmsg;
 		gamestart=input.gamestart;
 		sendFD.requestFocus();	
 		

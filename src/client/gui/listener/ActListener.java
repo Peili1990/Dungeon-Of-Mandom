@@ -20,4 +20,6 @@ public class ActListener extends KeyAdapter{
 			sframe.sendFD.setText("");
 		}
 	}
+	
+	
 }
